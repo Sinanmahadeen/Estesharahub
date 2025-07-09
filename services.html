@@ -43,6 +43,7 @@
       display: flex;
       flex-wrap: wrap;
       align-items: center;
+      justify-content: space-between;
       margin-bottom: 3rem;
       gap: 2rem;
     }
@@ -53,7 +54,7 @@
 
     .service-text h2 {
       color: #006666;
-      font-size: 1.6rem;
+      font-size: 1.5rem;
       margin-bottom: 0.5rem;
     }
 
@@ -63,7 +64,9 @@
 
     .service img {
       flex: 1 1 40%;
-      max-width: 100%;
+      max-width: 400px;
+      width: 100%;
+      height: auto;
       border-radius: 8px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
@@ -78,6 +81,10 @@
     @media (max-width: 768px) {
       .service {
         flex-direction: column;
+      }
+
+      .service img {
+        max-width: 100%;
       }
     }
   </style>
@@ -96,9 +103,10 @@
   </script>
 
   <main>
+
     <div class="service">
       <div class="service-text">
-        <h2>Consulting Approach</h2>
+        <h2>Consulting </h2>
         <p>We offer tailored consulting services across strategy, legal frameworks, architecture, and organizational development in collaboration with expert partners.</p>
       </div>
       <img src="images/consulting.png" alt="Consulting Process Flow" />
@@ -114,7 +122,7 @@
 
     <div class="service">
       <div class="service-text">
-        <h2>Project Management Approach</h2>
+        <h2>Project Management </h2>
         <p>We adopt Agile, Waterfall, or Hybrid models depending on the project nature. PMO alignment and scalable standards are applied when applicable.</p>
       </div>
       <img src="images/PM.png" alt="Project Management Framework" />
@@ -126,6 +134,7 @@
         <p>Provided in collaboration with <strong>Modern Methods</strong>, for concept development and implementation support.</p>
       </div>
     </div>
+
   </main>
 
   <footer>
