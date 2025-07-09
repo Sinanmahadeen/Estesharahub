@@ -39,36 +39,42 @@
       margin: auto;
     }
 
-    .service {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
+    .intro {
+      text-align: center;
       margin-bottom: 3rem;
+      font-size: 1.1rem;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 2rem;
     }
 
-    .service-text {
-      flex: 1 1 50%;
+    .service-card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      text-align: center;
     }
 
-    .service-text h2 {
+    .service-card h2 {
       color: #006666;
-      font-size: 1.5rem;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.8rem;
     }
 
-    .service-text p {
+    .service-card p {
+      margin-bottom: 1rem;
       line-height: 1.6;
     }
 
-    .service img {
-      flex: 1 1 40%;
-      max-width: 400px;
-      width: 100%;
+    .service-card img {
+      max-width: 100%;
       height: auto;
       border-radius: 8px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      margin-top: 1rem;
     }
 
     footer {
@@ -76,16 +82,6 @@
       text-align: center;
       padding: 1rem;
       font-size: 0.9rem;
-    }
-
-    @media (max-width: 768px) {
-      .service {
-        flex-direction: column;
-      }
-
-      .service img {
-        max-width: 100%;
-      }
     }
   </style>
 </head>
@@ -104,35 +100,35 @@
 
   <main>
 
-    <div class="service">
-      <div class="service-text">
-        <h2>Consulting </h2>
-        <p>We offer tailored consulting services across strategy, legal frameworks, architecture, and organizational development in collaboration with expert partners.</p>
-      </div>
-      <img src="images/consulting.png" alt="Consulting Process Flow" />
+    <div class="intro">
+      <p>At Esteshara Hub, we deliver tailored consulting, training, and project management services in collaboration with legal and architectural experts — turning ideas into action through effective support.</p>
     </div>
 
-    <div class="service">
-      <div class="service-text">
+    <div class="service-grid">
+
+      <div class="service-card">
+        <h2>Consulting</h2>
+        <p>Strategic and operational advice tailored for NGOs, startups, and institutions — including legal guidance (Mahadeen Law) and architectural consulting (Modern Methods).</p>
+        <img src="images/consulting.png" alt="Consulting Diagram">
+      </div>
+
+      <div class="service-card">
         <h2>Training Programs</h2>
-        <p>Our training services are designed to empower people and organizations through structured programs, technical workshops, and hands-on mentoring.</p>
+        <p>Empowering individuals and teams through customized training, technical workshops, and on-the-job mentoring in governance, finance, ERP, and AI tools.</p>
+        <img src="images/training.png" alt="Training Program">
       </div>
-      <img src="images/training.png" alt="Training Process Diagram" />
-    </div>
 
-    <div class="service">
-      <div class="service-text">
-        <h2>Project Management </h2>
-        <p>We adopt Agile, Waterfall, or Hybrid models depending on the project nature. PMO alignment and scalable standards are applied when applicable.</p>
+      <div class="service-card">
+        <h2>Project Management</h2>
+        <p>End-to-end project planning and execution using Agile, Waterfall, or Hybrid models. PMO setup and process development aligned to project scale.</p>
+        <img src="images/PM.png" alt="Project Management">
       </div>
-      <img src="images/PM.png" alt="Project Management Framework" />
-    </div>
 
-    <div class="service">
-      <div class="service-text">
-        <h2>Architectural Consultation</h2>
-        <p>Provided in collaboration with <strong>Modern Methods</strong>, for concept development and implementation support.</p>
+      <div class="service-card">
+        <h2>Architectural Consulting</h2>
+        <p>In collaboration with Modern Methods — supporting concept development, design guidance, and implementation oversight for development projects.</p>
       </div>
+
     </div>
 
   </main>
