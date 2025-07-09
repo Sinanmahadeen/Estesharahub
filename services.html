@@ -1,71 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services | Esteshara Hub</title>
-    <style>
-        body { font-family: Arial, sans-serif; background: #f9f9f9; color: #333; margin: 0; padding: 0; }
-        header { background-color: #20b2aa; color: white; padding: 1.5rem; text-align: center; }
-        nav { background: #e0f7f5; padding: 1rem; text-align: center; }
-        nav a { margin: 0 15px; text-decoration: none; color: #20b2aa; font-weight: bold; }
-        main { padding: 2rem; max-width: 800px; margin: auto; }
-        footer { background: #eee; text-align: center; padding: 1rem; font-size: 0.9rem; }
-    </style>
-     <meta charset="UTF-8">
-  <title>Services</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services | Esteshara Hub</title>
   <style>
-    .service-images img {
-      width: 60%;
-      height: auto;
-      margin: 2rem auto;
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #20b2aa;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    nav {
+      background: #e0f7f5;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #20b2aa;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .services-section {
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .services-section h2 {
+      margin-top: 3rem;
+      font-size: 1.8rem;
+      color: #005d5d;
+    }
+
+    .services-section p {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 1.5rem auto;
+      line-height: 1.6;
+    }
+
+    .services-section img {
       display: block;
+      margin: 2rem auto;
+      max-width: 40%;
+      height: auto;
       border-radius: 8px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      background: #eee;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
-
-    <header>
-        <h1>Our Services</h1>
-    </header>
-
-    <div id="navbar"></div>
-<script>
-  fetch('navbar.html')
-    .then(res => res.text())
-    .then(data => document.getElementById('navbar').innerHTML = data);
-</script>
-
-    <main>
-        <p>Esteshara Hub offers strategic and tailored services in:</p>
-        <ul>
-            <li><strong>Consulting:</strong> For NGOs, startups, and public institutions</li>
-            <section class="service-images">
-  <h2>Consulting Approach</h2>
-  <p>We offer tailored consulting services across strategy, legal frameworks, architecture, and organizational development in collaboration with expert partners.</p>
-  <img src="images/consulting.png" alt="Consulting Process Flow">
-</section>          
-            <li><strong>Training:</strong> Custom programs based on local and sector needs</li>
-<section class="service-images">
-  <h2>Training Programs</h2>
-  <p>Our training services are designed to empower people and organizations through structured programs, technical workshops, and hands-on mentoring.</p>
-  <img src="images/training.png" alt="Training Process Diagram">
-</section>          
-            <li><strong>Project Management:</strong> Freelance support and end-to-end management</li>
-<section class="service-images">
-  <h2>Project Management Approach</h2>
-  <p>We adopt Agile, Waterfall, or Hybrid models depending on the project nature. PMO alignment and scalable standards are applied when applicable.</p>
-  <img src="images/PM.png" alt="Project Management Framework">
-</section>           
-            <li><strong>Architectural Consultation:</strong> In collaboration with Modern Methods firm</li>
-        </ul>
-    </main>
-
-    <footer>
-        &copy; 2025 Esteshara Hub. All rights reserved.
-    </footer>
-
-</body>
-</html>
