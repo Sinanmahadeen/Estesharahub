@@ -35,33 +35,37 @@
 
     main {
       padding: 2rem;
-      max-width: 1000px;
+      max-width: 1200px;
       margin: auto;
     }
 
-    .services-section {
-      text-align: center;
+    .service {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 3rem;
+      gap: 2rem;
     }
 
-    .services-section h2 {
-      margin-top: 2.5rem;
-      font-size: 1.6rem;
+    .service-text {
+      flex: 1 1 50%;
+    }
+
+    .service-text h2 {
       color: #006666;
+      font-size: 1.6rem;
+      margin-bottom: 0.5rem;
     }
 
-    .services-section p {
-      max-width: 800px;
-      margin: 0 auto 1rem;
+    .service-text p {
       line-height: 1.6;
     }
 
-    .services-section img {
-      max-width: 40%;
-      height: auto;
-      margin: 1.5rem auto;
-      display: block;
+    .service img {
+      flex: 1 1 40%;
+      max-width: 100%;
       border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
     footer {
@@ -69,6 +73,12 @@
       text-align: center;
       padding: 1rem;
       font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .service {
+        flex-direction: column;
+      }
     }
   </style>
 </head>
@@ -86,21 +96,35 @@
   </script>
 
   <main>
-    <div class="services-section">
-      <h2>Consulting Approach</h2>
-      <p>We offer tailored consulting services across strategy, legal frameworks, architecture, and organizational development in collaboration with expert partners.</p>
+    <div class="service">
+      <div class="service-text">
+        <h2>Consulting Approach</h2>
+        <p>We offer tailored consulting services across strategy, legal frameworks, architecture, and organizational development in collaboration with expert partners.</p>
+      </div>
       <img src="images/consulting.png" alt="Consulting Process Flow" />
+    </div>
 
-      <h2>Training Programs</h2>
-      <p>Our training services are designed to empower people and organizations through structured programs, technical workshops, and hands-on mentoring.</p>
+    <div class="service">
+      <div class="service-text">
+        <h2>Training Programs</h2>
+        <p>Our training services are designed to empower people and organizations through structured programs, technical workshops, and hands-on mentoring.</p>
+      </div>
       <img src="images/training.png" alt="Training Process Diagram" />
+    </div>
 
-      <h2>Project Management Approach</h2>
-      <p>We adopt Agile, Waterfall, or Hybrid models depending on the project nature. PMO alignment and scalable standards are applied when applicable.</p>
+    <div class="service">
+      <div class="service-text">
+        <h2>Project Management Approach</h2>
+        <p>We adopt Agile, Waterfall, or Hybrid models depending on the project nature. PMO alignment and scalable standards are applied when applicable.</p>
+      </div>
       <img src="images/PM.png" alt="Project Management Framework" />
+    </div>
 
-      <h2>Architectural Consultation</h2>
-      <p>Provided in collaboration with <strong>Modern Methods</strong>, for concept development and implementation support.</p>
+    <div class="service">
+      <div class="service-text">
+        <h2>Architectural Consultation</h2>
+        <p>Provided in collaboration with <strong>Modern Methods</strong>, for concept development and implementation support.</p>
+      </div>
     </div>
   </main>
 
