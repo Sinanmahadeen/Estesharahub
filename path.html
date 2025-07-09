@@ -17,6 +17,12 @@
     <header>
         <h1>Our Path</h1>
         <p>Reflecting on our journey — past projects, ongoing partnerships, and the road ahead</p>
+        <div id="navbar"></div>
+<script>
+  fetch('navbar.html')
+    .then(res => res.text())
+    .then(data => document.getElementById('navbar').innerHTML = data);
+</script>
     </header>
     <main>
         <section>
