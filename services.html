@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Our Services | Esteshara Hub</title>
   <style>
     body {
@@ -40,30 +40,28 @@
     }
 
     .services-section {
-      padding: 1rem;
       text-align: center;
     }
 
     .services-section h2 {
-      margin-top: 3rem;
-      font-size: 1.8rem;
-      color: #005d5d;
+      margin-top: 2.5rem;
+      font-size: 1.6rem;
+      color: #006666;
     }
 
     .services-section p {
-      text-align: center;
       max-width: 800px;
-      margin: 0 auto 1.5rem auto;
+      margin: 0 auto 1rem;
       line-height: 1.6;
     }
 
     .services-section img {
-      display: block;
-      margin: 2rem auto;
       max-width: 40%;
       height: auto;
+      margin: 1.5rem auto;
+      display: block;
       border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
     footer {
@@ -75,3 +73,40 @@
   </style>
 </head>
 <body>
+
+  <header>
+    <h1>Our Services</h1>
+  </header>
+
+  <div id="navbar"></div>
+  <script>
+    fetch('navbar.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('navbar').innerHTML = data);
+  </script>
+
+  <main>
+    <div class="services-section">
+      <h2>Consulting Approach</h2>
+      <p>We offer tailored consulting services across strategy, legal frameworks, architecture, and organizational development in collaboration with expert partners.</p>
+      <img src="images/consulting.png" alt="Consulting Process Flow" />
+
+      <h2>Training Programs</h2>
+      <p>Our training services are designed to empower people and organizations through structured programs, technical workshops, and hands-on mentoring.</p>
+      <img src="images/training.png" alt="Training Process Diagram" />
+
+      <h2>Project Management Approach</h2>
+      <p>We adopt Agile, Waterfall, or Hybrid models depending on the project nature. PMO alignment and scalable standards are applied when applicable.</p>
+      <img src="images/PM.png" alt="Project Management Framework" />
+
+      <h2>Architectural Consultation</h2>
+      <p>Provided in collaboration with <strong>Modern Methods</strong>, for concept development and implementation support.</p>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Esteshara Hub. All rights reserved.
+  </footer>
+
+</body>
+</html>
