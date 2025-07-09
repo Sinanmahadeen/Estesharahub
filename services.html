@@ -19,13 +19,12 @@
         <h1>Our Services</h1>
     </header>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="services.html">Services</a>
-        <a href="path.html">Our Path</a>
-        <a href="contact.html">Contact Us</a>
-    </nav>
+    <div id="navbar"></div>
+<script>
+  fetch('navbar.html')
+    .then(res => res.text())
+    .then(data => document.getElementById('navbar').innerHTML = data);
+</script>
 
     <main>
         <p>Esteshara Hub offers strategic and tailored services in:</p>
