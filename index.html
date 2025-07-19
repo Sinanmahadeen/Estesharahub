@@ -1,61 +1,130 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esteshara Hub</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #333; }
-        header { background-color: #20b2aa; color: white; padding: 1rem; text-align: center; }
-        main { padding: 2rem; max-width: 800px; margin: auto; }
-      header h1 { font-size: 1.2rem;      
-    font-weight: normal; color: white; margin: 0;}
-        section { margin-bottom: 2rem; }
-        footer { background: #eee; text-align: center; padding: 1rem; font-size: 0.9rem; }
-    </style>
-    </head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Esteshara Hub</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #ffffff;
+    }
+
+    nav img {
+      width: 160px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    header {
+      background-color: #20b2aa;
+      color: white;
+      padding: 1rem 2rem;
+      font-size: 1.2rem; /* Slightly larger */
+      text-align: left;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    footer {
+      background: #eee;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    figure img {
+      width: 100%;
+      border-radius: 8px;
+    }
+  </style>
+</head>
 <body>
-    <div style="text-align: center; margin-top: 40px;">
-  <img src="logohorizantal.png" alt="EstesharaHub Logo" width="300">
-</div>
-    <header>
-    <h1>Consultancy • Training • Project Management Support</h1>
-</header>
-    <div id="navbar"></div>
-<script>
-  fetch('navbar.html')
-    .then(res => res.text())
-    .then(data => document.getElementById('navbar').innerHTML = data);
-</script>
-    <main>
-        <section>
-            <h2>Welcome</h2>
-            <p>Esteshara Hub is your partner in strategic consultancy, practical training, and freelance project management. We work with organizations, associations, and professionals to unlock their full potential.</p>
-        </section>
-          <figure>
-            <img
-              src="widehomepage.webp"
-              alt="Collaborative consulting environment"
-              style="border-radius: 8px"
-            />        
-          </figure>
-        <section>
-            <h2>Our Services</h2>
-            <ul>
-                <li>Organizational Consultancy</li>
-                <li>Customized Training Programs</li>
-                <li>Freelance Project Management</li>
-                <li>Capacity Building for NGOs and Startups</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Contact</h2>
-            <p>Email: info@estesharahub.com</p>
-        </section>
-    </main>
-    <footer>
-        &copy; 2025 Esteshara Hub. All rights reserved.
-    </footer>
+
+  <!-- Navigation -->
+  <nav>
+    <img src="logohorizantal.png" alt="EstesharaHub Logo" />
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="path.html">Our Path</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    Consultancy • Training • Project Management
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section>
+      <h2>Welcome</h2>
+      <p>
+        Esteshara Hub is your partner in strategic consultancy, practical training, and freelance project management. 
+        We work with organizations, associations, and professionals to unlock their full potential.
+      </p>
+    </section>
+
+    <figure>
+      <img src="widehomepage.webp" alt="Esteshara Hub Hero Image" />
+    </figure>
+
+    <section>
+      <h2>Our Services</h2>
+      <ul>
+        <li>Organizational Consultancy</li>
+        <li>Customized Training Programs</li>
+        <li>Freelance Project Management</li>
+        <li>Capacity Building for NGOs and Startups</li>
+        <li>Architectural Consulting</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>
+        Email: <a href="mailto:info@estesharahub.com">info@estesharahub.com</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Esteshara Hub. All rights reserved.
+  </footer>
+
 </body>
 </html>
