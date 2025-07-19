@@ -1,118 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Esteshara Hub</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
-    />
-  </head>
-  <body>
-    <!-- Navigation -->
-    <nav class="container-fluid">
-  <ul>
-    <li>
-      <strong>
-        <img
-          src="logohorizantal.png"
-          alt="Esteshara Hub Logo"
-          style="height: 80px"
-        />
-      </strong>
-    </li>
-  </ul>
-  <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="services.html">Services</a></li>
-    <li><a href="#contact" role="button">Contact</a></li>
-  </ul>
-</nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Esteshara Hub</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #ffffff;
+    }
+    nav img {
+      width: 180px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    header {
+      background-color: #20b2aa;
+      color: white;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      text-align: left;
+    }
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    footer {
+      background: #eee;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+    figure img {
+      width: 100%;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
 
-    <!-- Main Content -->
-    <main class="container">
-      <div class="grid">
-        <section>
-          <hgroup>
-            <h2>Welcome to Esteshara Hub</h2>
-            <h3>Consultancy • Training • Project Management </h3>
-          </hgroup>
-          <p>
-            Esteshara Hub is your partner in strategic consultancy, practical
-            training, and freelance project management. We work with
-            organizations, associations, and professionals to unlock their full
-            potential.
-          </p>
+  <!-- Navigation -->
+  <nav>
+    <img src="logohorizantal.png" alt="EstesharaHub Logo" />
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Our Path</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </nav>
 
-          <figure>
-            <img
-              src="widehomepage.webp"
-              alt="Collaborative consulting environment"
-              style="border-radius: 8px"
-            />        
-          </figure>
+  <!-- Header -->
+  <header>
+    Consultancy • Training • Project Management
+  </header>
 
-          <h3>Our Services</h3>
-          <p>
-            We offer tailored consulting and training solutions to elevate your
-            organization:
-          </p>
-          <ul>
-            <li>Organizational Consultancy</li>
-            <li>Customized Training Programs</li>
-            <li>Freelance Project Management</li>
-            <li>Capacity Building for NGOs and Startups</li>
-          </ul>
-
-          <h3>Contact Us</h3>
-          <p>
-            Email:
-            <a href="mailto:info@estesharahub.com">info@estesharahub.com</a>
-          </p>
-        </section>
-      </div>
-    </main>
-
-    <!-- Subscribe Section -->
-    <section aria-label="Subscribe example">
-      <div class="container">
-        <article>
-          <hgroup>
-            <h2>Stay Connected</h2>
-            <h3>Subscribe for updates and insights</h3>
-          </hgroup>
-          <form class="grid">
-            <input
-              type="text"
-              id="firstname"
-              name="firstname"
-              placeholder="Your name"
-              aria-label="First name"
-              required
-            />
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Your email"
-              aria-label="Email address"
-              required
-            />
-            <button type="submit" onclick="event.preventDefault()">
-              Subscribe
-            </button>
-          </form>
-        </article>
-      </div>
+  <!-- Main Content -->
+  <main>
+    <section>
+      <h2>Welcome</h2>
+      <p>
+        Esteshara Hub is your partner in strategic consultancy, practical training, and freelance project management. 
+        We work with organizations, associations, and professionals to unlock their full potential.
+      </p>
     </section>
 
-    <!-- Footer -->
-    <footer class="container">
-      <small>
-        <a href="#">Privacy Policy</a> •
-        <a href="#">Terms & Conditions</a>
-      </small>
-    </footer>
-  </body>
+    <figure>
+      <!-- Replace with your hero image -->
+      <img src="your-hero-image.jpg" alt="Hero Image of Esteshara Hub" />
+    </figure>
+
+    <section>
+      <h2>Our Services</h2>
+      <ul>
+        <li>Organizational Consultancy</li>
+        <li>Customized Training Programs</li>
+        <li>Freelance Project Management</li>
+        <li>Capacity Building for NGOs and Startups</li>
+        <li>Architectural Consulting</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:info@estesharahub.com">info@estesharahub.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Esteshara Hub. All rights reserved.
+  </footer>
+
+</body>
 </html>
