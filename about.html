@@ -1,35 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Esteshara Hub</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #333; }
-        header, footer { background-color: #20b2aa; color: white; padding: 1.5rem; text-align: center; }
-        nav a { margin: 0 15px; color: white; text-decoration: none; }
-        main { padding: 2rem; max-width: 800px; margin: auto; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us | Esteshara Hub</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #ffffff;
+    }
+
+    nav img {
+      width: 160px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    header {
+      background-color: #20b2aa;
+      color: white;
+      padding: 1.5rem 2rem;
+      font-size: 1.2rem;
+      text-align: left;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    figure img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    footer {
+      background: #eee;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>About Esteshara Hub</h1>
-<div id="navbar"></div>
-<script>
-  fetch('navbar.html')
-    .then(res => res.text())
-    .then(data => document.getElementById('navbar').innerHTML = data);
-</script>
-    </header>
-    <main>
-        <h2>Who We Are</h2>
-        <p>Esteshara Hub is a consultancy and project support service built on a deep understanding of local needs, global standards, and practical experience. We work with NGOs, startups, and companies to build smarter organizations, train effective teams, and deliver impactful projects.</p>
 
-        <h2>Our Vision</h2>
-        <p>To become a regional reference in structured consulting, impactful training, and agile project execution—rooted in tradition and aiming toward innovation.</p>
-    </main>
-    <footer>
-        &copy; 2025 Esteshara Hub. All rights reserved.
-    </footer>
+  <!-- Navigation -->
+  <nav>
+    <img src="logohorizantal.png" alt="EstesharaHub Logo" />
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="path.html">Our Path</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    About Esteshara Hub
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <figure>
+      <img src="about-hero.webp" alt="Consultant working at Esteshara Hub office" />
+    </figure>
+
+    <section>
+      <h2>Who We Are</h2>
+      <p>
+        Esteshara Hub is a consultancy and project delivery firm built on a deep understanding of local needs, global standards, and practical experience.
+        We empower NGOs, startups, and mission-driven organizations by strengthening governance, training effective teams, and managing projects with care and clarity.
+      </p>
+    </section>
+
+    <section>
+      <h2>Our Vision</h2>
+      <p>
+        We aim to become a regional leader in structured consulting, impactful training, and agile project execution—bridging tradition with innovation, and strategy with impact.
+      </p>
+    </section>
+
+    <section>
+      <h2>What Sets Us Apart</h2>
+      <p>
+        Our work is defined by integrity, collaboration, and a strong commitment to capacity building. We bring not just services—but long-term value that empowers communities, institutions, and emerging leaders.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Esteshara Hub. All rights reserved.
+  </footer>
+
 </body>
 </html>
