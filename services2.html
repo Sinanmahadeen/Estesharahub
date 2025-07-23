@@ -1,135 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Our Services | Esteshara Hub</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/@tabler/icons@latest/iconfont/tabler-icons.min.css"
-    />
-    <style>
-      .service-icon {
-        font-size: 2rem;
-        color: #20b2aa;
-        margin-bottom: 0.25rem;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Navigation -->
-    <nav class="container-fluid">
-      <ul>
-        <li>
-          <strong>
-            <img
-              src="logohorizantal.png"
-              alt="Esteshara Hub Logo"
-              style="height: 80px"
-            />
-          </strong>
-        </li>
-      </ul>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="#contact" role="button">Contact</a></li>
-      </ul>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Services | Esteshara Hub</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
 
-    <!-- Main Content -->
-    <main class="container">
-      <div class="grid">
-        <section>
-          <hgroup>
-            <h2>Our Services</h2>
-            <h3>Empowering Organizations with Strategy, Skill, and Support</h3>
-          </hgroup>
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #ffffff;
+    }
 
-          <h3><i class="ti ti-building-community service-icon"></i> Organizational Consultancy</h3>
-          <p>
-            We help you grow stronger from the inside out—improving governance,
-            team structure, and workflow. Our consultancy equips your
-            organization with strategic planning, internal system alignment, and
-            leadership development.
-          </p>
+    nav img {
+      width: 160px;
+    }
 
-          <h3><i class="ti ti-chalkboard service-icon"></i> Customized Training Programs</h3>
-          <p>
-            Training is most effective when it’s relevant. We design and deliver
-            personalized training programs tailored to your organization’s goals
-            and sector. Learn, upskill, and implement—smarter.
-          </p>
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+    }
 
-          <h3><i class="ti ti-calendar-cog service-icon"></i> Freelance Project Management</h3>
-          <p>
-            Need hands-on project execution? We provide flexible freelance
-            project managers who guide your initiative through its entire
-            lifecycle—from design and planning to implementation and closure.
-          </p>
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
 
-          <h3><i class="ti ti-rocket service-icon"></i> Capacity Building for NGOs & Startups</h3>
-          <p>
-            Your mission matters. We help NGOs and startups build lasting impact
-            through strategic planning, operational coaching, mentorship, and
-            system-building support designed for scalability.
-          </p>
+    header {
+      background-color: #20b2aa;
+      color: white;
+      padding: 1.5rem 2rem;
+      font-size: 1.2rem;
+      text-align: left;
+    }
 
-          <h3><i class="ti ti-building-arch service-icon"></i> Architectural Consulting</h3>
-          <p>
-            In collaboration with <strong>Modern Methods</strong>, we provide
-            expert support for development projects — including concept
-            development, design guidance, and implementation oversight. We
-            ensure that your architectural vision aligns with practical project
-            outcomes.
-          </p>
-        </section>
+    main {
+      padding: 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .hero {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .service-block {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .service-block img {
+      height: 48px;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      background: #eee;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <img src="images/logohorizantal.png" alt="EstesharaHub Logo" />
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="path.html">Our Path</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    Our Services
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <img src="images/services-hero.png" class="hero" alt="Team working on strategy" />
+
+    <p style="text-align:center; max-width:700px; margin:auto;">
+      Empowering organizations through expertise, training, and smart execution.
+    </p>
+
+    <div class="services-grid">
+      <!-- Service 1 -->
+      <div class="service-block">
+        <img src="https://cdn.jsdelivr.net/gh/tabler/tabler-icons/icons/building.svg" alt="Consultancy Icon" />
+        <h3>Organizational Consultancy</h3>
+        <p>
+          Helping institutions align their structure, leadership, and strategy through tailored consulting engagements.
+        </p>
       </div>
-    </main>
 
-    <!-- Subscribe Section -->
-    <section aria-label="Subscribe example">
-      <div class="container">
-        <article>
-          <hgroup>
-            <h2>Stay Informed</h2>
-            <h3>Subscribe to receive service updates and tips</h3>
-          </hgroup>
-          <form class="grid">
-            <input
-              type="text"
-              id="firstname"
-              name="firstname"
-              placeholder="Your name"
-              aria-label="First name"
-              required
-            />
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Your email"
-              aria-label="Email address"
-              required
-            />
-            <button type="submit" onclick="event.preventDefault()">
-              Subscribe
-            </button>
-          </form>
-        </article>
+      <!-- Service 2 -->
+      <div class="service-block">
+        <img src="https://cdn.jsdelivr.net/gh/tabler/tabler-icons/icons/chalkboard.svg" alt="Training Icon" />
+        <h3>Customized Training Programs</h3>
+        <p>
+          Designing and delivering relevant trainings that address real-world needs across development, governance, and management.
+        </p>
       </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="container">
-      <small>
-        <a href="#">Privacy Policy</a> •
-        <a href="#">Terms & Conditions</a>
-      </small>
-    </footer>
-  </body>
+      <!-- Service 3 -->
+      <div class="service-block">
+        <img src="https://cdn.jsdelivr.net/gh/tabler/tabler-icons/icons/calendar-cog.svg" alt="Project Icon" />
+        <h3>Freelance Project Management</h3>
+        <p>
+          Providing flexible and experienced project managers who guide your initiatives from idea to impact.
+        </p>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="service-block">
+        <img src="https://cdn.jsdelivr.net/gh/tabler/tabler-icons/icons/rocket.svg" alt="NGO Icon" />
+        <h3>Capacity Building for NGOs & Startups</h3>
+        <p>
+          Empowering grassroots and emerging orgs with systems, training, and advisory for long-term growth.
+        </p>
+      </div>
+
+      <!-- Service 5 -->
+      <div class="service-block">
+        <img src="https://cdn.jsdelivr.net/gh/tabler/tabler-icons/icons/building-arch.svg" alt="Architecture Icon" />
+        <h3>Architectural Consulting</h3>
+        <p>
+          In collaboration with Modern Methods — we support concept development, design guidance, and implementation oversight.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Esteshara Hub. All rights reserved.
+  </footer>
+
+</body>
 </html>
