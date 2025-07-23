@@ -47,110 +47,27 @@
       text-align: left;
     }
 
-    main {
-      padding: 2rem;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-
-    .service-block {
-      background: white;
-      padding: 1.5rem;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-      text-align: center;
-    }
-
-    .service-block img {
-      height: 48px;
-      margin-bottom: 1rem;
-    }
-
-    .hero {
+    .hero-section {
+      position: relative;
       width: 100%;
-      border-radius: 8px;
-      margin-top: 3rem;
-      opacity: 0.85;
-      object-fit: cover;
-      mix-blend-mode: multiply;
+      height: 100vh;
+      background: url('images/Services_hero.webp') no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
-    footer {
-      background: #eee;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      margin-top: 3rem;
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.7);
+      z-index: 1;
     }
-  </style>
-</head>
-<body>
 
-  <!-- Navigation -->
-  <nav>
-    <img src="images/logohorizantal.png" alt="EstesharaHub Logo" />
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="path.html">Our Path</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-    </ul>
-  </nav>
-
-  <!-- Header -->
-  <header>
-    Our Services
-  </header>
-
-  <!-- Main Content -->
-  <main>
-    <div class="services-grid">
-      <div class="service-block">
-        <img src="images/icon-building.svg" alt="Consultancy Icon" />
-        <h3>Organizational Consultancy</h3>
-        <p>Helping institutions align their structure, leadership, and strategy through tailored consulting engagements.</p>
-      </div>
-
-      <div class="service-block">
-        <img src="images/icon-training.svg" alt="Training Icon" />
-        <h3>Customized Training Programs</h3>
-        <p>Designing and delivering relevant trainings that address real-world needs across development, governance, and management.</p>
-      </div>
-
-      <div class="service-block">
-        <img src="images/icon-project.svg" alt="Project Icon" />
-        <h3>Freelance Project Management</h3>
-        <p>Providing flexible and experienced project managers who guide your initiatives from idea to impact.</p>
-      </div>
-
-      <div class="service-block">
-        <img src="images/icon-ngo.svg" alt="NGO Icon" />
-        <h3>Capacity Building for NGOs & Startups</h3>
-        <p>Empowering grassroots and emerging orgs with systems, training, and advisory for long-term growth.</p>
-      </div>
-
-      <div class="service-block">
-        <img src="images/icon-architecture.svg" alt="Architecture Icon" />
-        <h3>Architectural Consulting</h3>
-        <p>In collaboration with Modern Methods — we support concept development, design guidance, and implementation oversight.</p>
-      </div>
-    </div>
-
-    <!-- Hero Image -->
-    <img src="images/services-hero.png" class="hero" alt="Team working on strategy" />
-  </main>
-
-  <footer>
-    &copy; 2025 Esteshara Hub. All rights reserved.
-  </footer>
-
-</body>
-</html>
+    .services-overlay {
+      position: relative;
+      z-index: 2;
+      max-width: 1100px;
