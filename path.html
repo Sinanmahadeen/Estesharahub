@@ -3,13 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Esteshara Hub</title>
+  <title>Our Path | Esteshara Hub</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f9f9f9;
+      font-family: Arial, sans-serif;
+      background: url('images/timeline-background.png') no-repeat center top;
+      background-size: cover;
+      background-attachment: fixed;
       color: #333;
     }
 
@@ -43,62 +45,8 @@
       background-color: #20b2aa;
       color: white;
       padding: 1rem 2rem;
-      font-size: 1.2rem; /* Slightly larger */
+      font-size: 1.2rem;
       text-align: left;
-    }
-
-    main {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    section {
-      margin-bottom: 2rem;
-    }
-
-    footer {
-      background: #eee;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-    }
-
-    figure img {
-      width: 100%;
-      border-radius: 8px;
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Navigation -->
-  <nav>
-    <img src="logohorizantal.png" alt="EstesharaHub Logo" />
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="path.html">Our Path</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-    </ul>
-  </nav>
-
-  <!-- Header -->
-  <header>
-    Consultancy • Training • Project Management
-  </header>
-  <title>Our Path | Esteshara Hub</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background: url('images/timeline-background.png') no-repeat center top;
-      background-size: cover;
-      background-attachment: fixed;
-      color: #333;
     }
 
     .overlay-wrapper {
@@ -145,32 +93,6 @@
       color: #777;
     }
 
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-      background-color: #ffffff;
-    }
-
-    nav img {
-      width: 160px;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 2rem;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-    }
-
     footer {
       background: #eee;
       text-align: center;
@@ -180,6 +102,8 @@
   </style>
 </head>
 <body>
+
+  <!-- Navigation -->
   <nav>
     <img src="logohorizantal.png" alt="Esteshara Hub Logo" />
     <ul>
@@ -191,6 +115,12 @@
     </ul>
   </nav>
 
+  <!-- Header -->
+  <header>
+    Consultancy • Training • Project Management
+  </header>
+
+  <!-- Timeline Content -->
   <div class="overlay-wrapper">
     <main class="container">
       <div class="timeline">
@@ -220,13 +150,13 @@
         </div>
 
         <div class="phase">
-          <h3>Consulting Engagements with Large Firms</h3>
+          <h3>🧩 Consulting Engagements with Large Firms</h3>
           <time>2022–2023</time>
           <p>Participated in consulting assignments involving major regional players and global firms, including one of the Big Four. Supported organizational development, restructuring, and impact-focused strategy.</p>
         </div>
 
         <div class="phase">
-          <h3>Esteshara Hub</h3>
+          <h3>💡 Esteshara Hub</h3>
           <time>2024–Present</time>
           <p>Launch of Esteshara Hub, a regional consultancy focused on capacity building, customized training, and freelance project management. Built on everything before, this is where local insight meets structured thinking.</p>
         </div>
@@ -235,8 +165,10 @@
     </main>
   </div>
 
+  <!-- Footer -->
   <footer class="container">
     <small><a href="mailto:info@estesharahub.com">info@estesharahub.com</a> • <a href="index.html">Back to Home</a></small>
   </footer>
+
 </body>
 </html>
