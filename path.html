@@ -4,30 +4,78 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Our Path | Esteshara Hub</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
   <style>
     body {
       margin: 0;
+      padding: 0;
       font-family: Arial, sans-serif;
-      background: url('images/path-background.png') no-repeat center center fixed;
+      background: url('images/timeline-background.png') no-repeat center top;
       background-size: cover;
+      background-attachment: fixed;
+      color: #333;
+    }
+
+    .overlay-wrapper {
+      background-color: rgba(255, 255, 255, 0.88);
+      backdrop-filter: brightness(1.04);
+      padding: 4rem 1rem;
+    }
+
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .phase {
+      background: white;
+      padding: 1.5rem;
+      border-left: 6px solid #20b2aa;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      position: relative;
+    }
+
+    .phase::before {
+      content: "";
+      position: absolute;
+      left: -12px;
+      top: 20px;
+      width: 20px;
+      height: 20px;
+      background: #20b2aa;
+      border-radius: 50%;
+      border: 3px solid white;
+    }
+
+    .phase h3 {
+      margin-bottom: 0.4rem;
+    }
+
+    .phase time {
+      font-size: 0.85rem;
+      color: #777;
     }
 
     nav {
-      background-color: #fff;
-      padding: 1rem 2rem;
       display: flex;
-      align-items: center;
       justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #ffffff;
     }
 
     nav img {
-      height: 50px;
+      width: 160px;
     }
 
     nav ul {
       list-style: none;
       display: flex;
-      gap: 1.5rem;
+      gap: 2rem;
       margin: 0;
       padding: 0;
     }
@@ -38,44 +86,11 @@
       font-weight: bold;
     }
 
-    header {
-      background-color: #20b2aa;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-
-    .timeline {
-      padding: 3rem 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    .stage {
-      background: rgba(255, 255, 255, 0.9);
-      padding: 1.5rem;
-      margin-bottom: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    }
-
-    .stage h2 {
-      margin-top: 0;
-      color: #222;
-    }
-
-    .stage p {
-      margin: 0.5rem 0 0;
-      color: #444;
-      line-height: 1.6;
-    }
-
     footer {
+      background: #eee;
       text-align: center;
-      padding: 1.5rem;
-      background-color: #eee;
-      color: #333;
-      margin-top: 3rem;
+      padding: 1rem;
+      font-size: 0.9rem;
     }
   </style>
 </head>
@@ -87,54 +102,56 @@
       <li><a href="about.html">About Us</a></li>
       <li><a href="services.html">Services</a></li>
       <li><a href="path.html">Our Path</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="contact.html" role="button">Contact</a></li>
     </ul>
   </nav>
 
-  <header>
-    <h1>Our Path</h1>
-  </header>
+  <div class="overlay-wrapper">
+    <main class="container">
+      <div class="timeline">
 
-  <div class="timeline">
-    <div class="stage">
-      <h2>Technical Foundation & Regional Experience</h2>
-      <p><strong>2006–2015</strong></p>
-      <p>Spent nearly a decade working on technical systems, operations, and training delivery across regional projects. These years involved direct engagement with infrastructure systems, data platforms, and organizational workflows in the Middle East — helping shape a grounded, regionally informed perspective.</p>
-    </div>
+        <div class="phase">
+          <h3>Technical Foundation & Regional Experience</h3>
+          <time>2006–2015</time>
+          <p>Spent nearly a decade working on technical systems, operations, and training delivery across regional projects. These years involved direct engagement with infrastructure systems, data platforms, and organizational workflows in the Middle East — helping shape a grounded, regionally informed perspective.</p>
+        </div>
 
-    <div class="stage">
-      <h2>Launch of Dubai Service Center</h2>
-      <p><strong>2016</strong></p>
-      <p>Led the development of a customer support and operations service center for a government-focused entity in Dubai. Drove process improvement, identified inefficiencies, and implemented optimized solutions that significantly enhanced service response and workflow clarity.</p>
-    </div>
+        <div class="phase">
+          <h3>Launch of Dubai Service Center</h3>
+          <time>2016</time>
+          <p>Identified operational gaps in organizational support and initiated a full-service consultancy and training center in Dubai. The project was designed and led in partnership with institutional actors to serve a regional base of mission-driven organizations. It became a scalable service model influencing future consulting methods.</p>
+        </div>
 
-    <div class="stage">
-      <h2>MBA & Business Reframing</h2>
-      <p><strong>2017</strong></p>
-      <p>Earned an MBA with a focus on strategy, operations, and organizational behavior — enabling a deeper understanding of business models and how to apply consulting thinking to large-scale projects and social challenges.</p>
-    </div>
+        <div class="phase">
+          <h3>Strategic Thinking & Business Frameworks</h3>
+          <time>2017</time>
+          <p>A turning point — advanced business education helped introduce strategic analysis, structured evaluation, and systems-thinking into consulting practice. This business-oriented lens continues to inform Esteshara’s approach to capacity development and service delivery.</p>
+        </div>
 
-    <div class="stage">
-      <h2>High-Scale Projects Across Sectors</h2>
-      <p><strong>2019–2021</strong></p>
-      <p>Supported multiple regional projects, including digital transformation initiatives for a major aviation group and organizational capability efforts at a large pharmaceutical company. These engagements involved stakeholder coordination, workflow design, and training facilitation across departments.</p>
-    </div>
+        <div class="phase">
+          <h3>Scaling Strategy Across Industries</h3>
+          <time>2019–2021</time>
+          <p>Worked with a national infrastructure operator managing airport and transport systems, and a top regional pharmaceutical company advising on internal project planning, training architecture, and scalable delivery tools. Also conducted training and workshops for startups and institutional teams across the Gulf and wider MENA region.</p>
+        </div>
 
-    <div class="stage">
-      <h2>🧩 Consulting Engagements with Large Firms</h2>
-      <p><strong>2022–2023</strong></p>
-      <p>Participated in consulting assignments involving major regional players and global firms, including one of the Big Four. Supported organizational development, restructuring, and impact-focused strategy.</p>
-    </div>
+        <div class="phase">
+          <h3>Consulting Engagements with Large Firms</h3>
+          <time>2022–2023</time>
+          <p>Participated in consulting assignments involving major regional players and global firms, including one of the Big Four. Supported organizational development, restructuring, and impact-focused strategy.</p>
+        </div>
 
-    <div class="stage">
-      <h2>💡 Esteshara Hub</h2>
-      <p><strong>2024–Present</strong></p>
-      <p>Launch of Esteshara Hub, a regional consultancy focused on capacity building, customized training, and freelance project management. Built on everything before, this is where local insight meets structured thinking.</p>
-    </div>
+        <div class="phase">
+          <h3>Esteshara Hub</h3>
+          <time>2024–Present</time>
+          <p>Launch of Esteshara Hub, a regional consultancy focused on capacity building, customized training, and freelance project management. Built on everything before, this is where local insight meets structured thinking.</p>
+        </div>
+
+      </div>
+    </main>
   </div>
 
-  <footer>
-    &copy; 2025 Esteshara Hub. All rights reserved.
+  <footer class="container">
+    <small><a href="mailto:info@estesharahub.com">info@estesharahub.com</a> • <a href="index.html">Back to Home</a></small>
   </footer>
 </body>
 </html>
