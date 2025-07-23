@@ -1,47 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Path - Esteshara Hub</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fdfdfd; color: #333; }
-        header { background-color: #20b2aa; color: white; padding: 1.5rem; text-align: center; }
-        main { padding: 2rem; max-width: 800px; margin: auto; }
-        h1 { color: #20b2aa; }
-        section { margin-bottom: 2rem; }
-        footer { background: #eee; text-align: center; padding: 1rem; font-size: 0.9rem; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Path | Esteshara Hub</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: url('images/timeline-background.png') no-repeat center top;
+      background-size: cover;
+      background-attachment: fixed;
+      color: #333;
+    }
+    main.container {
+      padding: 5rem 2rem;
+      backdrop-filter: brightness(1.05);
+    }
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      max-width: 850px;
+      margin: auto;
+    }
+    .phase {
+      background: rgba(255, 255, 255, 0.88);
+      padding: 1.5rem;
+      border-left: 6px solid #20b2aa;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
+    .phase::before {
+      content: "";
+      position: absolute;
+      left: -12px;
+      top: 20px;
+      width: 20px;
+      height: 20px;
+      background: #20b2aa;
+      border-radius: 50%;
+      border: 3px solid white;
+    }
+    .phase h3 {
+      margin-bottom: 0.4rem;
+    }
+    .phase time {
+      font-size: 0.85rem;
+      color: #777;
+    }
+    footer {
+      background: #eee;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Our Path</h1>
-        <p>Reflecting on our journey — past projects, ongoing partnerships, and the road ahead</p>
-        <div id="navbar"></div>
-<script>
-  fetch('navbar.html')
-    .then(res => res.text())
-    .then(data => document.getElementById('navbar').innerHTML = data);
-</script>
-    </header>
-    <main>
-        <section>
-            <h2>Milestones</h2>
-            <p>Esteshara Hub has worked alongside a wide range of organizations, from grassroots associations to international development partners. We are proud of the trust we've built and the challenges we've turned into achievements.</p>
-        </section>
+  <nav class="container-fluid">
+    <ul><li><strong>Esteshara Hub</strong></li></ul>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="path.html">Our Path</a></li>
+      <li><a href="contact.html" role="button">Contact</a></li>
+    </ul>
+  </nav>
+  <main class="container">
+    <div class="timeline">
 
-        <section>
-            <h2>Collaborations</h2>
-            <p>Through partnerships with firms like Modern Methods and legal consultancy via Mahadeen Law, we’ve helped bring architectural visions, legal frameworks, and development projects into harmony. These collaborations reflect our belief in cross-sector synergy.</p>
-        </section>
+      <div class="phase">
+        <h3>Technical Foundation & Regional Experience</h3>
+        <time>2006–2015</time>
+        <p>Spent nearly a decade working on technical systems, operations, and training delivery across regional projects. These years involved direct engagement with infrastructure systems, data platforms, and organizational workflows in the Middle East — helping shape a grounded, regionally informed perspective.</p>
+      </div>
 
-        <section>
-            <h2>The Road Ahead</h2>
-            <p>We remain committed to expanding our services across training, consulting, and project support — always with a human-first approach, rooted in impact and practical outcomes.</p>
-        </section>
-    </main>
-    <footer>
-        &copy; 2025 Esteshara Hub. All rights reserved.
-    </footer>
+      <div class="phase">
+        <h3>Launch of Dubai Service Center</h3>
+        <time>2016</time>
+        <p>Identified operational gaps in organizational support and initiated a full-service consultancy and training center in Dubai. The project was designed and led in partnership with institutional actors to serve a regional base of mission-driven organizations. It became a scalable service model influencing future consulting methods.</p>
+      </div>
+
+      <div class="phase">
+        <h3>Strategic Thinking & Business Frameworks</h3>
+        <time>2017</time>
+        <p>A turning point — advanced business education helped introduce strategic analysis, structured evaluation, and systems-thinking into consulting practice. This business-oriented lens continues to inform Esteshara’s approach to capacity development and service delivery.</p>
+      </div>
+
+      <div class="phase">
+        <h3>Scaling Strategy Across Industries</h3>
+        <time>2019–2021</time>
+        <p>Worked with a national infrastructure operator managing airport and transport systems, and a top regional pharmaceutical company advising on internal project planning, training architecture, and scalable delivery tools. Also conducted training and workshops for startups and institutional teams across the Gulf and wider MENA region.</p>
+      </div>
+
+      <div class="phase">
+        <h3>Consulting Engagements with Large Firms</h3>
+        <time>2022–2023</time>
+        <p>Participated in consulting assignments involving major regional players and global firms, including one of the Big Four. Supported organizational development, restructuring, and impact-focused strategy.</p>
+      </div>
+
+      <div class="phase">
+        <h3>Esteshara Hub</h3>
+        <time>2024–Present</time>
+        <p>Launch of Esteshara Hub, a regional consultancy focused on capacity building, customized training, and freelance project management. Built on everything before, this is where local insight meets structured thinking.</p>
+      </div>
+
+    </div>
+  </main>
+  <footer class="container">
+    <small><a href="mailto:info@estesharahub.com">info@estesharahub.com</a> • <a href="index.html">Back to Home</a></small>
+  </footer>
 </body>
 </html>
