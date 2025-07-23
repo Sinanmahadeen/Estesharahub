@@ -15,10 +15,13 @@
       background-attachment: fixed;
       color: #333;
     }
-    main.container {
-      padding: 5rem 2rem;
-      backdrop-filter: brightness(1.05);
+
+    .overlay-wrapper {
+      background-color: rgba(255, 255, 255, 0.88);
+      backdrop-filter: brightness(1.04);
+      padding: 4rem 1rem;
     }
+
     .timeline {
       display: flex;
       flex-direction: column;
@@ -26,14 +29,16 @@
       max-width: 850px;
       margin: auto;
     }
+
     .phase {
-      background: rgba(255, 255, 255, 0.88);
+      background: white;
       padding: 1.5rem;
       border-left: 6px solid #20b2aa;
       border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
       position: relative;
     }
+
     .phase::before {
       content: "";
       position: absolute;
@@ -45,13 +50,42 @@
       border-radius: 50%;
       border: 3px solid white;
     }
+
     .phase h3 {
       margin-bottom: 0.4rem;
     }
+
     .phase time {
       font-size: 0.85rem;
       color: #777;
     }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #ffffff;
+    }
+
+    nav img {
+      width: 160px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
     footer {
       background: #eee;
       text-align: center;
@@ -61,8 +95,8 @@
   </style>
 </head>
 <body>
-  <nav class="container-fluid">
-    <ul><li><strong>Esteshara Hub</strong></li></ul>
+  <nav>
+    <img src="logohorizantal.png" alt="Esteshara Hub Logo" />
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Us</a></li>
@@ -71,47 +105,51 @@
       <li><a href="contact.html" role="button">Contact</a></li>
     </ul>
   </nav>
-  <main class="container">
-    <div class="timeline">
 
-      <div class="phase">
-        <h3>Technical Foundation & Regional Experience</h3>
-        <time>2006–2015</time>
-        <p>Spent nearly a decade working on technical systems, operations, and training delivery across regional projects. These years involved direct engagement with infrastructure systems, data platforms, and organizational workflows in the Middle East — helping shape a grounded, regionally informed perspective.</p>
+  <div class="overlay-wrapper">
+    <main class="container">
+      <div class="timeline">
+
+        <div class="phase">
+          <h3>Technical Foundation & Regional Experience</h3>
+          <time>2006–2015</time>
+          <p>Spent nearly a decade working on technical systems, operations, and training delivery across regional projects. These years involved direct engagement with infrastructure systems, data platforms, and organizational workflows in the Middle East — helping shape a grounded, regionally informed perspective.</p>
+        </div>
+
+        <div class="phase">
+          <h3>Launch of Dubai Service Center</h3>
+          <time>2016</time>
+          <p>Identified operational gaps in organizational support and initiated a full-service consultancy and training center in Dubai. The project was designed and led in partnership with institutional actors to serve a regional base of mission-driven organizations. It became a scalable service model influencing future consulting methods.</p>
+        </div>
+
+        <div class="phase">
+          <h3>Strategic Thinking & Business Frameworks</h3>
+          <time>2017</time>
+          <p>A turning point — advanced business education helped introduce strategic analysis, structured evaluation, and systems-thinking into consulting practice. This business-oriented lens continues to inform Esteshara’s approach to capacity development and service delivery.</p>
+        </div>
+
+        <div class="phase">
+          <h3>Scaling Strategy Across Industries</h3>
+          <time>2019–2021</time>
+          <p>Worked with a national infrastructure operator managing airport and transport systems, and a top regional pharmaceutical company advising on internal project planning, training architecture, and scalable delivery tools. Also conducted training and workshops for startups and institutional teams across the Gulf and wider MENA region.</p>
+        </div>
+
+        <div class="phase">
+          <h3>Consulting Engagements with Large Firms</h3>
+          <time>2022–2023</time>
+          <p>Participated in consulting assignments involving major regional players and global firms, including one of the Big Four. Supported organizational development, restructuring, and impact-focused strategy.</p>
+        </div>
+
+        <div class="phase">
+          <h3>Esteshara Hub</h3>
+          <time>2024–Present</time>
+          <p>Launch of Esteshara Hub, a regional consultancy focused on capacity building, customized training, and freelance project management. Built on everything before, this is where local insight meets structured thinking.</p>
+        </div>
+
       </div>
+    </main>
+  </div>
 
-      <div class="phase">
-        <h3>Launch of Dubai Service Center</h3>
-        <time>2016</time>
-        <p>Identified operational gaps in organizational support and initiated a full-service consultancy and training center in Dubai. The project was designed and led in partnership with institutional actors to serve a regional base of mission-driven organizations. It became a scalable service model influencing future consulting methods.</p>
-      </div>
-
-      <div class="phase">
-        <h3>Strategic Thinking & Business Frameworks</h3>
-        <time>2017</time>
-        <p>A turning point — advanced business education helped introduce strategic analysis, structured evaluation, and systems-thinking into consulting practice. This business-oriented lens continues to inform Esteshara’s approach to capacity development and service delivery.</p>
-      </div>
-
-      <div class="phase">
-        <h3>Scaling Strategy Across Industries</h3>
-        <time>2019–2021</time>
-        <p>Worked with a national infrastructure operator managing airport and transport systems, and a top regional pharmaceutical company advising on internal project planning, training architecture, and scalable delivery tools. Also conducted training and workshops for startups and institutional teams across the Gulf and wider MENA region.</p>
-      </div>
-
-      <div class="phase">
-        <h3>Consulting Engagements with Large Firms</h3>
-        <time>2022–2023</time>
-        <p>Participated in consulting assignments involving major regional players and global firms, including one of the Big Four. Supported organizational development, restructuring, and impact-focused strategy.</p>
-      </div>
-
-      <div class="phase">
-        <h3>Esteshara Hub</h3>
-        <time>2024–Present</time>
-        <p>Launch of Esteshara Hub, a regional consultancy focused on capacity building, customized training, and freelance project management. Built on everything before, this is where local insight meets structured thinking.</p>
-      </div>
-
-    </div>
-  </main>
   <footer class="container">
     <small><a href="mailto:info@estesharahub.com">info@estesharahub.com</a> • <a href="index.html">Back to Home</a></small>
   </footer>
