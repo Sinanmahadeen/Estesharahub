@@ -12,6 +12,7 @@
       font-family: Arial, sans-serif;
       background: #f9f9f9;
       color: #333;
+      position: relative;
     }
 
     nav {
@@ -47,36 +48,22 @@
       font-size: 1.2rem;
     }
 
-    .contact-hero {
-      margin-top: 1.5rem;
-      position: relative;
+    .bg-blur {
+      position: fixed;
+      top: 120px;
+      left: 0;
       width: 100%;
-      max-height: 350px;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .contact-hero img {
-      width: 100%;
-      height: auto;
-      opacity: 0.85;
-      filter: blur(1px);
-      object-fit: cover;
+      height: 100%;
+      z-index: -1;
+      background: url('images/contact.webp') no-repeat center center/cover;
+      opacity: 0.3;
+      filter: blur(3px);
     }
 
     main {
       padding: 2rem;
       max-width: 900px;
       margin: auto;
-    }
-
-    footer {
-      background: #eee;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
     }
 
     .contact-info {
@@ -87,16 +74,23 @@
       margin-bottom: 0.3rem;
     }
 
-    .contact-form {
-      margin-top: 2rem;
+    form input,
+    form textarea {
+      margin-bottom: 1rem;
     }
 
-    form input, form textarea {
-      margin-bottom: 1rem;
+    footer {
+      background: #eee;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
+
+  <!-- Background Blur -->
+  <div class="bg-blur"></div>
 
   <!-- Navigation -->
   <nav>
@@ -115,28 +109,25 @@
     Consultancy • Training • Project Management
   </header>
 
-  <!-- Hero Image -->
-  <div class="contact-hero">
-    <img src="images/contact.webp" alt="Contact Illustration" />
-  </div>
-
   <!-- Main Content -->
   <main>
     <h2>Contact Us</h2>
 
     <div class="contact-info">
-      <p><strong>Email:</strong> <a href="mailto:info@estesharahub.com">info@estesharahub.com</a></p>
       <p><strong>Phone:</strong> <a href="tel:+971500000000">+971 50 000 0000</a></p>
       <p><strong>Location:</strong> Dubai, United Arab Emirates</p>
+      <p><strong>Email:</strong> <a href="mailto:info@estesharahub.com">info@estesharahub.com</a></p>
     </div>
+
+    <p><em>Or email us directly at <a href="mailto:sinan.mahadeen@estesharahub.com">sinan.mahadeen@estesharahub.com</a></em></p>
 
     <div class="contact-form">
       <h3>Send a Message</h3>
-      <form>
+      <form action="mailto:sinan.mahadeen@estesharahub.com" method="POST" enctype="text/plain">
         <input type="text" name="name" placeholder="Your Name" required />
         <input type="email" name="email" placeholder="Your Email" required />
         <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit" onclick="event.preventDefault()">Send</button>
+        <button type="submit">Send</button>
       </form>
     </div>
   </main>
