@@ -4,13 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact Us | Esteshara Hub</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
   <style>
     body {
       margin: 0;
+      padding: 0;
       font-family: Arial, sans-serif;
-      background: url('images/contact.webp') no-repeat center top;
-      background-size: cover;
-      background-attachment: fixed;
+      background: #f9f9f9;
       color: #333;
     }
 
@@ -45,49 +45,31 @@
       color: white;
       padding: 1rem 2rem;
       font-size: 1.2rem;
-      text-align: left;
+    }
+
+    .contact-hero {
+      margin-top: 1.5rem;
+      position: relative;
+      width: 100%;
+      max-height: 350px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .contact-hero img {
+      width: 100%;
+      height: auto;
+      opacity: 0.85;
+      filter: blur(1px);
+      object-fit: cover;
     }
 
     main {
-      padding: 3rem 1rem;
-      max-width: 800px;
-      margin: auto;
-    }
-
-    .contact-box {
-      background: rgba(255, 255, 255, 0.9);
-      border-radius: 12px;
       padding: 2rem;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-    }
-
-    h2 {
-      margin-top: 0;
-    }
-
-    label {
-      font-weight: bold;
-      display: block;
-      margin-top: 1.2rem;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 0.8rem;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      margin-top: 0.5rem;
-    }
-
-    button {
-      margin-top: 1.5rem;
-      background-color: #20b2aa;
-      color: white;
-      border: none;
-      padding: 0.9rem 2rem;
-      font-size: 1rem;
-      border-radius: 6px;
-      cursor: pointer;
+      max-width: 900px;
+      margin: auto;
     }
 
     footer {
@@ -96,54 +78,73 @@
       padding: 1rem;
       font-size: 0.9rem;
     }
+
+    .contact-info {
+      margin-top: 2rem;
+    }
+
+    .contact-info p {
+      margin-bottom: 0.3rem;
+    }
+
+    .contact-form {
+      margin-top: 2rem;
+    }
+
+    form input, form textarea {
+      margin-bottom: 1rem;
+    }
   </style>
 </head>
 <body>
 
   <!-- Navigation -->
   <nav>
-    <img src="logohorizantal.png" alt="EstesharaHub Logo" />
+    <img src="logohorizantal.png" alt="Esteshara Hub Logo" />
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Us</a></li>
       <li><a href="services.html">Services</a></li>
       <li><a href="path.html">Our Path</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="contact.html" role="button">Contact</a></li>
     </ul>
   </nav>
 
   <!-- Header -->
   <header>
-    Contact Us
+    Consultancy • Training • Project Management
   </header>
 
-  <!-- Contact Form -->
+  <!-- Hero Image -->
+  <div class="contact-hero">
+    <img src="images/contact.webp" alt="Contact Illustration" />
+  </div>
+
+  <!-- Main Content -->
   <main>
-    <div class="contact-box">
-      <h2>Get in Touch</h2>
-      <p>We’d love to hear from you. Whether you’re seeking consultancy, collaboration, or a conversation — send us a message.</p>
+    <h2>Contact Us</h2>
 
+    <div class="contact-info">
+      <p><strong>Email:</strong> <a href="mailto:info@estesharahub.com">info@estesharahub.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+971500000000">+971 50 000 0000</a></p>
+      <p><strong>Location:</strong> Dubai, United Arab Emirates</p>
+    </div>
+
+    <div class="contact-form">
+      <h3>Send a Message</h3>
       <form>
-        <label for="name">Name</label>
-        <input type="text" id="name" placeholder="Your Name" required>
-
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="you@example.com" required>
-
-        <label for="phone">Phone</label>
-        <input type="tel" id="phone" placeholder="+962 7X XXX XXXX">
-
-        <label for="message">Message</label>
-        <textarea id="message" rows="5" placeholder="Write your message here..." required></textarea>
-
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
         <button type="submit" onclick="event.preventDefault()">Send</button>
       </form>
     </div>
   </main>
 
   <!-- Footer -->
-  <footer>
+  <footer class="container">
     <small><a href="mailto:info@estesharahub.com">info@estesharahub.com</a> • <a href="index.html">Back to Home</a></small>
   </footer>
+
 </body>
 </html>
