@@ -53,12 +53,6 @@
       margin: auto;
     }
 
-    .hero {
-      width: 100%;
-      border-radius: 8px;
-      margin-bottom: 2rem;
-    }
-
     .services-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -77,6 +71,15 @@
     .service-block img {
       height: 48px;
       margin-bottom: 1rem;
+    }
+
+    .hero {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 3rem;
+      opacity: 0.85;
+      object-fit: cover;
+      mix-blend-mode: multiply;
     }
 
     footer {
@@ -109,58 +112,40 @@
 
   <!-- Main Content -->
   <main>
-    <img src="images/Services_hero.webp" class="hero" alt="Team working on strategy" />
-
-    <p style="text-align:center; max-width:700px; margin:auto;">
-      Empowering organizations through expertise, training, and smart execution.
-    </p>
-
     <div class="services-grid">
-      <!-- Service 1 -->
       <div class="service-block">
-        <img src="https://cdn.jsdelivr.net/gh/tabler/tabler-icons/icons/building.svg" alt="Consultancy Icon" />
+        <img src="images/icon-building.svg" alt="Consultancy Icon" />
         <h3>Organizational Consultancy</h3>
-        <p>
-          Helping institutions align their structure, leadership, and strategy through tailored consulting engagements.
-        </p>
+        <p>Helping institutions align their structure, leadership, and strategy through tailored consulting engagements.</p>
       </div>
 
-      <!-- Service 2 -->
       <div class="service-block">
-        <img src="https://cdn.jsdelivr.net/gh/tabler/tabler-icons/icons/chalkboard.svg" alt="Training Icon" />
+        <img src="images/icon-training.svg" alt="Training Icon" />
         <h3>Customized Training Programs</h3>
-        <p>
-          Designing and delivering relevant trainings that address real-world needs across development, governance, and management.
-        </p>
+        <p>Designing and delivering relevant trainings that address real-world needs across development, governance, and management.</p>
       </div>
 
-      <!-- Service 3 -->
       <div class="service-block">
-        <img src="https://cdn.jsdelivr.net/gh/tabler/tabler-icons/icons/calendar-cog.svg" alt="Project Icon" />
+        <img src="images/icon-project.svg" alt="Project Icon" />
         <h3>Freelance Project Management</h3>
-        <p>
-          Providing flexible and experienced project managers who guide your initiatives from idea to impact.
-        </p>
+        <p>Providing flexible and experienced project managers who guide your initiatives from idea to impact.</p>
       </div>
 
-      <!-- Service 4 -->
       <div class="service-block">
-        <img src="https://cdn.jsdelivr.net/gh/tabler/tabler-icons/icons/rocket.svg" alt="NGO Icon" />
+        <img src="images/icon-ngo.svg" alt="NGO Icon" />
         <h3>Capacity Building for NGOs & Startups</h3>
-        <p>
-          Empowering grassroots and emerging orgs with systems, training, and advisory for long-term growth.
-        </p>
+        <p>Empowering grassroots and emerging orgs with systems, training, and advisory for long-term growth.</p>
       </div>
 
-      <!-- Service 5 -->
       <div class="service-block">
-        <img src="https://cdn.jsdelivr.net/gh/tabler/tabler-icons/icons/building-arch.svg" alt="Architecture Icon" />
+        <img src="images/icon-architecture.svg" alt="Architecture Icon" />
         <h3>Architectural Consulting</h3>
-        <p>
-          In collaboration with Modern Methods — we support concept development, design guidance, and implementation oversight.
-        </p>
+        <p>In collaboration with Modern Methods — we support concept development, design guidance, and implementation oversight.</p>
       </div>
     </div>
+
+    <!-- Hero Image -->
+    <img src="images/services-hero.png" class="hero" alt="Team working on strategy" />
   </main>
 
   <footer>
