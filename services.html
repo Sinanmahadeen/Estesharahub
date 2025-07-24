@@ -13,6 +13,14 @@
       color: #333;
     }
 
+    .lang-switch {
+      position: absolute;
+      left: 1rem;
+      top: 1rem;
+      font-size: 0.9rem;
+      z-index: 20;
+    }
+
     nav {
       display: flex;
       justify-content: space-between;
@@ -64,7 +72,7 @@
       content: "";
       position: absolute;
       inset: 0;
-      background-color: rgba(255, 255, 255, 0.6); /* Light overlay */
+      background-color: rgba(255, 255, 255, 0.6);
       z-index: 1;
     }
 
@@ -119,17 +127,12 @@
   </style>
 </head>
 <body>
-  <!-- Add this inside your <style> tag -->
-.lang-switch {
-  position: absolute;
-  left: 1rem;
-  top: 1rem;
-  font-size: 0.9rem;
-  z-index: 20;
-}
+
+  <!-- Language Switch -->
+  <div class="lang-switch">
     <a href="services-ar.html">العربية</a>
   </div>
-  
+
   <!-- Navigation -->
   <nav>
     <img src="logohorizantal.png" alt="EstesharaHub Logo" />
