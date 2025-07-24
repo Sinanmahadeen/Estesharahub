@@ -1,23 +1,144 @@
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  ...
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>استشارة هب</title>
-  ...
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #ffffff;
+      direction: rtl;
+    }
+
+    nav img {
+      width: 160px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .lang-switch {
+      position: absolute;
+      left: 1rem;
+      top: 1rem;
+    }
+
+    header {
+      background-color: #20b2aa;
+      color: white;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      text-align: right;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      direction: rtl;
+      text-align: right;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    footer {
+      background: #eee;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    figure img {
+      width: 100%;
+      border-radius: 8px;
+    }
+  </style>
 </head>
 <body>
+
+  <!-- Language Switch -->
+  <div class="lang-switch">
+    <a href="index.html">English</a>
+  </div>
+
+  <!-- Navigation -->
   <nav>
     <img src="logohorizantal.png" alt="شعار استشارة هب" />
-    ...
+    <ul>
+      <li><a href="index-ar.html">الرئيسية</a></li>
+      <li><a href="about-ar.html">من نحن</a></li>
+      <li><a href="services-ar.html">الخدمات</a></li>
+      <li><a href="path-ar.html">مسيرتنا</a></li>
+      <li><a href="contact-ar.html">تواصل معنا</a></li>
+    </ul>
   </nav>
 
+  <!-- Header -->
   <header>
     استشارات • تدريب • إدارة مشاريع
   </header>
 
-  ...
+  <!-- Main Content -->
+  <main>
+    <section>
+      <h2>أهلاً وسهلاً</h2>
+      <p>
+        استشارة هب هي شريكك في الاستشارات الاستراتيجية، التدريب العملي، وإدارة المشاريع الحرة.
+        نعمل مع المؤسسات، الجمعيات، والمهنيين على إطلاق الإمكانيات وتحقيق الأثر.
+      </p>
+    </section>
+
+    <figure>
+      <img src="widehomepage.webp" alt="صورة استشارة هب الرئيسية" />
+    </figure>
+
+    <section>
+      <h2>خدماتنا</h2>
+      <ul>
+        <li>الاستشارات التنظيمية</li>
+        <li>برامج تدريبية مخصصة</li>
+        <li>إدارة المشاريع المستقلة</li>
+        <li>بناء القدرات للمنظمات الناشئة وغير الربحية</li>
+        <li>الاستشارات المعمارية</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>تواصل معنا</h2>
+      <p>
+        البريد الإلكتروني: <a href="mailto:info@estesharahub.com">info@estesharahub.com</a>
+      </p>
+    </section>
+  </main>
 
   <footer>
     &copy; 2025 استشارة هب. جميع الحقوق محفوظة.
   </footer>
+
 </body>
 </html>
