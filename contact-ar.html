@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>اتصل بنا | استشارة هب</title>
+  <style>
+    body {
+      margin-top: 2rem;
+      font-family: Arial, sans-serif;
+      background: url('images/contactmiddle.webp') no-repeat center top;
+      background-size: cover;
+      background-attachment: fixed;
+      color: #333;
+    }
+
+    .lang-switch {
+      position: absolute;
+      left: 1rem;
+      top: 1rem;
+      font-size: 0.9rem;
+      z-index: 20;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #ffffff;
+      direction: rtl;
+    }
+
+    nav img {
+      width: 160px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    header {
+      background-color: #20b2aa;
+      color: white;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      text-align: right;
+    }
+
+    main {
+      padding: 3rem 1rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .contact-box {
+      background: rgba(255, 255, 255, 0.92);
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      text-align: right;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 1.2rem;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-top: 0.5rem;
+      direction: rtl;
+    }
+
+    button {
+      margin-top: 1.5rem;
+      background-color: #20b2aa;
+      color: white;
+      border: none;
+      padding: 0.9rem 2rem;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #eee;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Language Switch -->
+  <div class="lang-switch">
+    <a href="contact.html">English</a>
+  </div>
+
+  <!-- Navigation -->
+  <nav>
+    <img src="logohorizantal.png" alt="شعار استشارة هب" />
+    <ul>
+      <li><a href="index-ar.html">الرئيسية</a></li>
+      <li><a href="about-ar.html">من نحن</a></li>
+      <li><a href="services-ar.html">الخدمات</a></li>
+      <li><a href="path-ar.html">رحلتنا</a></li>
+      <li><a href="contact-ar.html">اتصل بنا</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    اتصل بنا
+  </header>
+
+  <!-- Contact Form -->
+  <main>
+    <div class="contact-box">
+      <h2>نحن هنا من أجلك</h2>
+      <p>هل تبحث عن تعاون، استشارة، أو حوار؟ يسعدنا تواصلك معنا.</p>
+
+      <form>
+        <label for="name">الاسم</label>
+        <input type="text" id="name" placeholder="اسمك" required>
+
+        <label for="email">البريد الإلكتروني</label>
+        <input type="email" id="email" placeholder="you@example.com" required>
+
+        <label for="phone">رقم الهاتف</label>
+        <input type="tel" id="phone" placeholder="+962 7X XXX XXXX">
+
+        <label for="message">رسالتك</label>
+        <textarea id="message" rows="5" placeholder="اكتب رسالتك هنا..." required></textarea>
+
+        <button type="submit" onclick="event.preventDefault()">إرسال</button>
+      </form>
+    </div>
+
+    <p style="text-align: center; margin-top: 1.5rem;">
+      أو يمكنك التواصل مباشرة عبر البريد الإلكتروني:
+      <a href="mailto:info@estesharahub.com">info@estesharahub.com</a>
+    </p>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <small><a href="mailto:info@estesharahub.com">info@estesharahub.com</a> • <a href="index-ar.html">العودة إلى الرئيسية</a></small>
+  </footer>
+
+</body>
+</html>
