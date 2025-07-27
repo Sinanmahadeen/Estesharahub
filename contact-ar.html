@@ -113,7 +113,7 @@
 
   <!-- Language Switch -->
   <div class="lang-switch">
-    <a href="contact.html">English</a>
+    <a href="/contact.html">English</a>
   </div>
 
   <!-- Navigation -->
@@ -139,20 +139,20 @@
       <h2>نحن هنا من أجلك</h2>
       <p>هل تبحث عن تعاون، استشارة، أو حوار؟ يسعدنا تواصلك معنا.</p>
 
-      <form>
+      <form action="https://formspree.io/f/xeozabdv" method="POST">
         <label for="name">الاسم</label>
-        <input type="text" id="name" placeholder="اسمك" required>
+        <input type="text" id="name" name="name" placeholder="اسمك" required>
 
         <label for="email">البريد الإلكتروني</label>
-        <input type="email" id="email" placeholder="you@example.com" required>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
 
         <label for="phone">رقم الهاتف</label>
-        <input type="tel" id="phone" placeholder="+962 7X XXX XXXX">
+        <input type="tel" id="phone" name="phone" placeholder="+962 7X XXX XXXX">
 
         <label for="message">رسالتك</label>
-        <textarea id="message" rows="5" placeholder="اكتب رسالتك هنا..." required></textarea>
+        <textarea id="message" name="message" rows="5" placeholder="اكتب رسالتك هنا..." required></textarea>
 
-        <button type="submit" onclick="event.preventDefault()">إرسال</button>
+        <button type="submit">إرسال</button>
       </form>
     </div>
 
