@@ -1,1 +1,192 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>خدماتنا | استشارة هب</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
 
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #ffffff;
+      position: relative;
+      z-index: 10;
+      direction: rtl;
+    }
+
+    nav img {
+      width: 160px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .lang-switch-in-nav {
+      font-size: 0.9rem;
+    }
+
+    header {
+      background-color: #20b2aa;
+      color: white;
+      padding: 1.5rem 2rem;
+      font-size: 1.2rem;
+      text-align: right;
+    }
+
+    .hero-section {
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+      background: url('images/Services_hero.webp') no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem 2rem;
+    }
+
+    .hero-section::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(255, 255, 255, 0.6);
+      z-index: 1;
+    }
+
+    .services-overlay {
+      position: relative;
+      z-index: 2;
+      max-width: 1100px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      justify-content: center;
+      direction: rtl;
+      text-align: right;
+    }
+
+    .service-block {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .service-block img {
+      height: 48px;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      background: #eee;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    @media (min-width: 800px) {
+      .services-overlay {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .service-block:nth-child(4),
+      .service-block:nth-child(5) {
+        grid-column: span 1;
+        justify-self: center;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .hero-section {
+        padding: 2rem 1rem;
+        min-height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <img src="logohorizantal.png" alt="شعار استشارة هب" />
+    
+    <div class="lang-switch-in-nav">
+      <a href="services.html">English</a>
+    </div>
+
+    <ul>
+      <li><a href="index-ar.html">الرئيسية</a></li>
+      <li><a href="about-ar.html">من نحن</a></li>
+      <li><a href="services-ar.html">الخدمات</a></li>
+      <li><a href="path-ar.html">رحلتنا</a></li>
+      <li><a href="contact-ar.html">اتصل بنا</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    خدماتنا
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="services-overlay">
+      <div class="service-block">
+        <img src="images/consulting_icon.png" alt="أيقونة الاستشارات المؤسسية" />
+        <h3>الاستشارات المؤسسية</h3>
+        <p>نساعد المؤسسات على مواءمة هيكلها وقيادتها واستراتيجيتها من خلال تدخلات استشارية مخصصة.</p>
+      </div>
+
+      <div class="service-block">
+        <img src="images/Training_icon.png" alt="أيقونة البرامج التدريبية" />
+        <h3>برامج تدريبية مخصصة</h3>
+        <p>تصميم وتنفيذ تدريبات عملية تستجيب لاحتياجات واقعية في مجالات التنمية والإدارة.</p>
+      </div>
+
+      <div class="service-block">
+        <img src="images/Project_icon.png" alt="أيقونة إدارة المشاريع" />
+        <h3>إدارة المشاريع المستقلة</h3>
+        <p>إدارة مرنة وفعّالة للمبادرات قصيرة أو متوسطة الأجل — من التخطيط إلى التنفيذ والتقييم.</p>
+      </div>
+
+      <div class="service-block">
+        <img src="images/Capacity_icon.png" alt="أيقونة بناء القدرات" />
+        <h3>بناء القدرات للمنظمات والمبادرات الناشئة</h3>
+        <p>دعم موجه للمنظمات غير الربحية والشركات الناشئة لتأسيس أنظمة فعالة وتحقيق النمو المستدام.</p>
+      </div>
+
+      <div class="service-block">
+        <img src="images/Arch_icon.png" alt="أيقونة الاستشارات المعمارية" />
+        <h3>الاستشارات المعمارية</h3>
+        <p>بالتعاون مع Modern Methods — نقدم دعم في تطوير المفهوم والإشراف على التصميم والتنفيذ للمشاريع العمرانية.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 استشارة هب. جميع الحقوق محفوظة.
+  </footer>
+
+</body>
+</html>
