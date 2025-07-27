@@ -1,1 +1,188 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>رحلتنا | استشارة هب</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: url('images/timeline-background.png') no-repeat center top;
+      background-size: cover;
+      background-attachment: fixed;
+      color: #333;
+    }
 
+    .lang-switch {
+      position: absolute;
+      left: 1rem;
+      top: 1rem;
+      font-size: 0.9rem;
+      z-index: 20;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #ffffff;
+      direction: rtl;
+    }
+
+    nav img {
+      width: 160px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    header {
+      background-color: #20b2aa;
+      color: white;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      text-align: right;
+    }
+
+    .overlay-wrapper {
+      background-color: rgba(255, 255, 255, 0.88);
+      backdrop-filter: brightness(1.04);
+      padding: 4rem 1rem;
+    }
+
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      max-width: 850px;
+      margin: auto;
+      direction: rtl;
+    }
+
+    .phase {
+      background: white;
+      padding: 1.5rem;
+      border-right: 6px solid #20b2aa;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      position: relative;
+    }
+
+    .phase::before {
+      content: "";
+      position: absolute;
+      right: -12px;
+      top: 20px;
+      width: 20px;
+      height: 20px;
+      background: #20b2aa;
+      border-radius: 50%;
+      border: 3px solid white;
+    }
+
+    .phase h3 {
+      margin-bottom: 0.4rem;
+    }
+
+    .phase time {
+      font-size: 0.85rem;
+      color: #777;
+    }
+
+    footer {
+      background: #eee;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Language Switch -->
+  <div class="lang-switch">
+    <a href="path.html">English</a>
+  </div>
+
+  <!-- Navigation -->
+  <nav>
+    <img src="logohorizantal.png" alt="شعار استشارة هب" />
+    <ul>
+      <li><a href="index-ar.html">الرئيسية</a></li>
+      <li><a href="about-ar.html">من نحن</a></li>
+      <li><a href="services-ar.html">الخدمات</a></li>
+      <li><a href="path-ar.html">رحلتنا</a></li>
+      <li><a href="contact-ar.html">اتصل بنا</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    رحلتنا المهنية
+  </header>
+
+  <!-- Timeline -->
+  <div class="overlay-wrapper">
+    <main class="container">
+      <div class="timeline">
+
+        <div class="phase">
+          <h3>الأساس الفني والخبرة الإقليمية</h3>
+          <time>2006–2015</time>
+          <p>عقد من العمل في النظم الفنية والتشغيلية وتقديم التدريب على مشاريع إقليمية. هذه المرحلة أسست لفهم عميق للسياقات المحلية والبنية المؤسسية في المنطقة.</p>
+        </div>
+
+        <div class="phase">
+          <h3>إطلاق مركز الخدمة بدبي</h3>
+          <time>2016</time>
+          <p>تم تحديد ثغرات تشغيلية واقتُرِحَ نموذج مركز دعم استشاري وتدريبي يعمل على خدمة المؤسسات في المنطقة. تحوّل النموذج إلى مقياس للتوسع لاحقاً.</p>
+        </div>
+
+        <div class="phase">
+          <h3>الإدارة الاستراتيجية والأطر العملية</h3>
+          <time>2017</time>
+          <p>التحول نحو التفكير التجاري والنماذج الممنهجة من خلال الماجستير. أسس هذا التوجه لمنهج استشارة مبني على التحليل والتخطيط الموجه للأثر.</p>
+        </div>
+
+        <div class="phase">
+          <h3>توسيع النطاق والتعاون مع القطاعات الكبرى</h3>
+          <time>2019–2021</time>
+          <p>العمل مع مشغلي مطارات وشبكات نقل وطنية، ومجموعة صيدلانية إقليمية كبرى. تم تقديم دعم في إدارة المشاريع الداخلية وتدريب الفرق المؤسسية إقليمياً.</p>
+        </div>
+
+        <div class="phase">
+          <h3>شراكات استشارية مع شركات كبرى</h3>
+          <time>2022–2023</time>
+          <p>مشاركة في مشاريع استشارية إقليمية وعالمية منها أحد الأربعة الكبار. شملت الاستشارات إعادة الهيكلة والتنظيم الإستراتيجي الموجه للتأثير.</p>
+        </div>
+
+        <div class="phase">
+          <h3>استشارة هب</h3>
+          <time>2024–الآن</time>
+          <p>إطلاق استشارة هب — بيت استشارات إقليمي يعمل على بناء القدرات، التدريب المخصص، وإدارة المشاريع المستقلة، مبني على كل ما سبق من معرفة وتجربة.</p>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    <small><a href="mailto:info@estesharahub.com">info@estesharahub.com</a> • <a href="index-ar.html">العودة إلى الرئيسية</a></small>
+  </footer>
+
+</body>
+</html>
